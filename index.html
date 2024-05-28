@@ -9,34 +9,38 @@
       rel="stylesheet"
     />
     <style>
-      .container {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 8px;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        width: 100%;
-        max-width: 400px;
-      }
-      textarea {
-        resize: none;
-      }
-    </style>
-  </head>
-  <body class="bg-gray-100 flex items-center justify-center min-h-screen">
-    <div class="container mx-auto text-center">
-      <h1 class="text-2xl font-bold mb-4">Convertisseur Romain-Hangul</h1>
-      <textarea
-        id="input"
-        class="w-full h-32 p-2 border border-gray-300 rounded mb-4"
-        placeholder="Entrez du texte romain..."
-      ></textarea>
-      <textarea
-        id="output"
-        class="w-full h-32 p-2 border border-gray-300 rounded"
-        placeholder="Résultat en Hangul..."
-        readonly
-      ></textarea>
-    </div>
+    .container {
+      background-color: #1f2937; /* Fond sombre */
+      color: #f3f4f6; /* Texte clair */
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+    textarea {
+      resize: none;
+      background-color: #374151; /* Fond sombre */
+      color: #f3f4f6; /* Texte clair */
+      border: 1px solid #4b5563; /* Bordure légèrement plus claire */
+    }
+  </style>
+</head>
+<body class="bg-gray-900 flex items-center justify-center min-h-screen">
+  <div class="container mx-auto text-center">
+    <h1 class="text-2xl font-bold mb-4">Convertisseur Romain-Hangul</h1>
+    <textarea
+      id="input"
+      class="w-full h-32 p-2 border border-gray-300 rounded mb-4"
+      placeholder="Entrez du texte romain..."
+    ></textarea>
+    <textarea
+      id="output"
+      class="w-full h-32 p-2 border border-gray-300 rounded"
+      placeholder="Résultat en Hangul..."
+      readonly
+    ></textarea>
+  </div>
     <script>
       /**
        * Hangul.js
